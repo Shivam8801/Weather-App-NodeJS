@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather Monitor</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading">
+            Weather App
+        </div>
+        <fieldset>
+            <form class="form" action="/" method="post">
+                <input name="city" type="text" class="input" placeholder="Enter a City" required>
+                <input type="submit" class="button" value="Get Weather">
+            </form>
+
+
+            <% if(weather !==null) { %>
+                <div class="weather-details">
+
+                    <p class="name-date">
+                        <%= locationname %>,
+                            <%= dt %>
+                    </p>
+                    <img src=<%=wicon %>>
+
+                    <p class="temp">
+                        <%= weather %>°C
+                    </p>
+
+                    <p class="desc">
+                        <%= weatherdesc %>
+                    </p>
+
+                </div>
+
+
+                <% } %>
+
+                    <% if(error !==null){ %>
+                        <p class="err">
+                            <%= error %>
+                        </p>
+                        <% } %>
+        </fieldset>
+    </div>
+</body>
+
+<!-- <p>
+    <%= weather %>
+</p> -->
+
+</html>

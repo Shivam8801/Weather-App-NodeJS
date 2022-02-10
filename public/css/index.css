@@ -1,0 +1,40 @@
+.weather-details
+{
+    font-size: 2em;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.weather-details img
+{
+    width: 130px;
+    margin-bottom: -70px;
+}
+
+.weather-details .temp
+{
+    font-size: 2em;
+    margin-bottom: -20px;
+}
+
+.err
+{
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.container .heading
+{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
